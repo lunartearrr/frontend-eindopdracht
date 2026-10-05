@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Sorts+Mill+Goudy:ital@0;1&display=swap"
+          rel="stylesheet">
+    <title>Contact - Atelier Interior Design</title>
+    <script src="https://kit.fontawesome.com/29c557c459.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="page-body">
+
+<div class="wrapper">
+    <header class="page-header">
+        <div class="header-nav">
+            <div>
+                <a class="header-logo" href="../index.html">
+                    <img class="logo" src="../assets/logo.png" alt="Atelier Interior Design">
+                </a>
+            </div>
+            <div>
+                <nav class="nav-links" aria-label="Navigatie menu">
+                    <a href="../index.html" class="header-nav-link">Home</a>
+                    <a href="maak-afspraak.html" class="header-nav-link">Maak afspraak</a>
+                    <a href="tarieven.html" class="header-nav-link">Tarieven</a>
+                    <a href="over-ons.html" class="header-nav-link">Over ons</a>
+                    <a href="contact.html" class="button-header-nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section-2">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Contact</h1>
+                    <p>Neem contact met ons op via het formulier <a href="#contact-form"
+                                                                    class="contact-form">hieronder</a>.
+                        We helpen je zo snel mogelijk verder!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <form id="contact-form">
+                <h2 class="section-title">Contactformulier</h2>
+                <div class="form-name">
+                    <div class="form-items">
+                        <label for="first-name">Voornaam</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Voornaam" required>
+                        <span class="error-message">Voer uw voornaam in.</span>
+                    </div>
+
+                    <div class="form-items">
+                        <label for="last-name">Achternaam</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Achternaam" required>
+                        <span class="error-message">Voer uw achternaam in.</span>
+                    </div>
+                </div>
+
+                <div class="form-name">
+                    <div class="form-items">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="E-mailadres" required>
+                        <span class="error-message">Voer een geldig e-mailadres in.</span>
+                    </div>
+                </div>
+
+                <div class="form-name">
+                    <div class="form-items">
+                        <label for="woonplaats">Woonplaats</label>
+                        <input type="text" name="woonplaats" id="woonplaats" placeholder="Woonplaats" required>
+                        <span class="error-message">Voer uw woonplaats in.</span>
+                    </div>
+
+                    <div class="form-items">
+                        <label for="birth-date">Geboortedatum</label>
+                        <input type="date" name="birth-date" id="birth-date" required>
+                        <span class="error-message">Voer uw geboortedatum in.</span>
+                    </div>
+                </div>
+
+                <div class="form-name">
+                    <div class="form-items">
+                        <label for="subject">Onderwerp</label>
+                        <select name="subject" id="subject" required>
+                            <option value="" disabled selected>Kies onderwerp van het bericht...</option>
+                            <option>Interieurontwerp</option>
+                            <option>Meubelselectie</option>
+                            <option>Kleuradvies</option>
+                            <option>Vraag over een afspraak</option>
+                            <option>Vraag over tarieven</option>
+                            <option>Overig</option>
+                        </select>
+                        <span class="error-message">Kies onderwerp van het bericht.</span>
+                    </div>
+                </div>
+
+                <div class="form-name">
+                    <div class="form-items">
+                        <label for="bericht">Bericht</label>
+                        <textarea name="bericht" id="bericht" placeholder="Schrijf hier uw bericht..."
+                                  required></textarea>
+                        <span class="error-message">Voer een bericht in.</span>
+                    </div>
+                </div>
+
+                <div class="form-name">
+                    <fieldset class="radio-fieldset">
+                        <legend class="newsletter-text">Inschrijven voor nieuwsbrief?</legend>
+                        <div class="radio-group">
+                            <input type="radio" name="newsletter" id="newsletter-y" value="ja" required>
+                            <label for="newsletter-y">Ja</label>
+
+                            <input type="radio" name="newsletter" id="newsletter-n" value="nee" required>
+                            <label for="newsletter-n">Nee</label>
+                        </div>
+                        <span class="error-message">Maak een keuze.</span>
+                    </fieldset>
+                </div>
+
+                <div class="form-name checkbox-row">
+                    <input type="checkbox" name="alg-voorwaarden" id="alg-voorwaarden" required>
+                    <label for="alg-voorwaarden">Ik ga akkoord met de algemene voorwaarden</label>
+                    <span class="error-message">Ga akkoord met de algemene voorwaarden om verder te gaan.</span>
+                </div>
+
+                <div class="form-items">
+                    <button type="submit" class="form-button">Verzenden
+                    </button>
+                </div>
+            </form>
+        </section>
+
+    </main>
+    <footer class="page-footer">
+        <div class="footer-nav">
+            <div class="footer-content-1">
+                <a class="footer-logo" href="../index.html">
+                    <img class="logo" src="../assets/logo.png" alt="Atelier Interior Design">
+                </a>
+                <p class="copyright">© 2026 Atelier Interior Design</p>
+                <div class="social-media-icons">
+
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+
+                    <a href="https://www.snapchat.com/" target="_blank" aria-label="Snapchat">
+                        <i class="fa-brands fa-snapchat"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-content-2">
+                <nav class="footer-content" aria-label="Navigatie van footer">
+                    <a href="privacy-policy.html" class="footer-nav-link">Privacyverklaring</a>
+                    <a href="terms-and-conditions.html" class="footer-nav-link">Algemene voorwaarden</a>
+                    <a href="cookie-policy.html" class="footer-nav-link">Cookiebeleid</a>
+                    <a href="contact.html" class="footer-nav-link">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>
+
+
